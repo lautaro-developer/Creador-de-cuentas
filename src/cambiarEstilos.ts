@@ -1,0 +1,2 @@
+export const agregarEstilo = (elemento: HTMLDivElement | HTMLInputElement | HTMLTitleElement, estilo: string) => elemento.classList.add(estilo)
+export const quitarEstilo = (elemento: HTMLDivElement | HTMLInputElement | HTMLTitleElement, estilo: string) => elemento.classList.remove(estilo)

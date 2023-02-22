@@ -4,10 +4,52 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/cambiarEstilos.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Crear cuenta</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="contenedor-form">
+        <h1 id="titulo">Regitrar cuenta</h1>
+        <form action="">
+          <div class="contenedor-nav" id="contenedor-usuario">
+            <label for="usuario"
+              ><i class="fa-solid fa-user"></i> Usuario*</label
+            >
+            <input type="text" name="usuario" id="usuario" value="" />
+          </div>
+          <div class="contenedor-nav" id="contenedor-contra">
+            <label for="pass"
+              ><i class="fa-solid fa-lock"></i> Contraseña*</label
+            >
+            <input type="password" name="pass" id="contra" />
+          </div>
+          <div class="contenedor-nav" id="contenedor-numero">
+            <label for="numero"
+              ><i class="fa-solid fa-phone"></i> Número*</label
+            >
+            <input type="number" name="numero" id="numero" />
+          </div>
+          <div class="contenedor-regitrarse-con">
+            <h2>Registrarse con</h2>
+            <div>
+              <button>Google <i class="fa-brands fa-google"></i></button>
+              <button>Microsoft <i class="fa-brands fa-microsoft"></i></button>
+            </div>
+          </div>
+          <div class="iniciar-sesion-crear-cuenta">
+            <button>Iniciar sesion</button>
+            <button id="CC">Crear cuenta</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
